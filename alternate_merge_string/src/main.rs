@@ -9,6 +9,15 @@ impl Solution {
             merged.push(c1);
             merged.push(c2);
         }
+         // Append any remaining characters from word1
+         while let Some(c1) = chars1.next() {
+            merged.push(c1);
+        }
+
+        // Append any remaining characters from word2
+        while let Some(c2) = chars2.next() {
+            merged.push(c2);
+        }
         merged
     }
 }
