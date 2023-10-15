@@ -1,4 +1,4 @@
-fn is_anagram(s: String, t: String) -> bool {
+pub fn is_anagram(s: String, t: String) -> bool {
     if s.len() != t.len() {
         return false;
     }
@@ -24,6 +24,6 @@ mod tests {
     }
 }
 
-fn main() {
-    println!("Hello, world!");
-}
+// fn main() {
+//     println!("Hello, world!");
+// }
