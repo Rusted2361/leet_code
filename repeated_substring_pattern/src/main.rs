@@ -20,15 +20,15 @@ mod tests {
 
     #[test]
     fn test_repeated_substring_pattern_true() {
-        assert_eq!(Solution::repeated_substring_pattern("abcabc".to_string()), true);
-        assert_eq!(Solution::repeated_substring_pattern("abab".to_string()), true);
+        assert_eq!(repeated_substring_pattern("abcabc".to_string()), true);
+        assert_eq!(repeated_substring_pattern("abab".to_string()), true);
         // Add more test cases for patterns that should return true
     }
 
     #[test]
     fn test_repeated_substring_pattern_false() {
-        assert_eq!(Solution::repeated_substring_pattern("abc".to_string()), false);
-        assert_eq!(Solution::repeated_substring_pattern("aabb".to_string()), false);
+        assert_eq!(repeated_substring_pattern("abc".to_string()), false);
+        assert_eq!(repeated_substring_pattern("aabb".to_string()), false);
         // Add more test cases for patterns that should return false
     }
 }
